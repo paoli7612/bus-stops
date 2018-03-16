@@ -17,3 +17,9 @@ class Data:
         if not id in self.lines:
             print("Servizio non disponibile")
         else: return self.lines[id]
+
+    def show_lines(self):
+        for id, bus_stops in self.lines.items:
+            print(id)
+            for bus_stop in bus_stops: print(bus_stop)
+            print
