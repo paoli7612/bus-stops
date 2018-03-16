@@ -1,4 +1,4 @@
-from data import Data
+from archive import Data
 data = Data("lines.xml")
 
 class Bus:
