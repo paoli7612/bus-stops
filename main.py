@@ -1,5 +1,4 @@
 from bus import Bus
 
-b = Bus("1")
-
-print(b)
+bus = Bus("1")
+print(bus)
