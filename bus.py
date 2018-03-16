@@ -1,11 +1,10 @@
-from archive import Data
-data = Data("lines.xml")
 
 class Bus:
-    def __init__(self, id):
+    def __init__(self, id, data):
         self.id = id
+        self.data = data
         self.next_stop = 0
-        self.lines = data.get_line(self.id)
+        self.lines = self.data.get_line(self.id)
 
     def __str__(self):
         text = ("Bus %s\n" % self.id)

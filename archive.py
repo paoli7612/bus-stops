@@ -2,7 +2,7 @@ import xml.etree.ElementTree as element_tree
 
 class Data:
     def __init__(self, file_name):
-        self.file_name = file_name
+        self.file_name = "data/" + file_name + ".xml"
         self.tree = element_tree.parse(self.file_name)
         self.root = self.tree.getroot()
         self.lines = dict()
@@ -18,8 +18,11 @@ class Data:
             print("Servizio non disponibile")
         else: return self.lines[id]
 
-    def show_lines(self):
-        for id, bus_stops in self.lines.items:
-            print(id)
-            for bus_stop in bus_stops: print(bus_stop)
-            print
+    def __str__(self):
+        text = str()
+        for id, bus_stops in self.lines.items():
+            text += ("LINEA: %s\n" %id)
+            for bus_stop in bus_stops:
+                text += (" - %s\n" %str(bus_stop))
+            text += "\n"
+        return text
