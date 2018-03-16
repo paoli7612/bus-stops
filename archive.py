@@ -1,8 +1,14 @@
 import xml.etree.ElementTree as element_tree
-
+import os
 class Data:
     def __init__(self, file_name):
+        self.all_city = os.listdir(os.getcwd()+"/data/")
+        if not file_name + ".xml" in self.all_city:
+            print("Citta' non presente nel archivio")
+            exit(0)
+
         self.file_name = "data/" + file_name + ".xml"
+
         self.tree = element_tree.parse(self.file_name)
         self.root = self.tree.getroot()
         self.lines = dict()
