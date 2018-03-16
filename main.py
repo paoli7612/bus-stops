@@ -1,10 +1,23 @@
 from bus import Bus
 from archive import Data
+from time import sleep
+from random import randint
+
 class Program:
     def __init__(self, city):
         self.city = city
         self.data = Data(self.city)
+        self.running = True
         print(self.data)
+        b = Bus("1",self)
+        b.start()
+        raw_input()
+        self.running = False
+
+    def sleep(self):
+        delay = randint(2,12)/10
+        sleep(delay)
+        return delay
 
 if __name__ == "__main__":
     import sys
