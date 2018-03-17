@@ -8,6 +8,7 @@ class Bus:
         self.next_stop = 0
         self.stops = self.program.data.get_line(self.id)
         self.thread = Thread(target=self.run)
+        self.program.logger.debug("Create new bus: " + self.id)
 
     def run(self):
         while self.program.running:
