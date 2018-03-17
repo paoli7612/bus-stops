@@ -11,11 +11,11 @@ class Program:
         print(self.data)
         b = Bus("1",self)
         b.start()
-        raw_input()
+        raw_input("Premi INVIO per terminare il programma")
         self.running = False
 
     def sleep(self):
-        delay = randint(2,12)/10
+        delay = float(randint(2,12))/10.0
         sleep(delay)
         return delay
 
