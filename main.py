@@ -3,6 +3,7 @@ from archive import Data
 from time import sleep
 from random import randint
 from logger import Logger
+from gui.window import Gui
 
 class Program:
     def __init__(self, city):
@@ -11,6 +12,7 @@ class Program:
         self.running = True
         self.logger = Logger("log/base.log")
         self.logger.start()
+        self.window = Gui(self)
         b = Bus("1",self)
         raw_input("Premi INVIO per terminare il programma")
         self.running = False
