@@ -9,4 +9,6 @@ For run this program we play main.py and the name of the city
 for example:
 ```powershell
 > python main.py Trento
+> tail -f log/base.log
 ```
+
