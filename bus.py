@@ -12,8 +12,8 @@ class Bus:
 
     def run(self):
         while self.program.running:
-            print(self.program.sleep())
-            print(self)
+            self.program.logger.info(self.program.sleep())
+            self.program.logger.info(self)
             self.next_stop = (self.next_stop + 1) % len(self.stops)
 
 

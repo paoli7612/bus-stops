@@ -14,6 +14,7 @@ class Program:
         self.logger.start()
         self.window = Gui(self)
         b = Bus("1",self)
+        b.start()
         raw_input("Premi INVIO per terminare il programma")
         self.running = False
         self.logger.quit()
