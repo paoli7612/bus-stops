@@ -2,6 +2,7 @@ import turtle
 
 class Gui:
     def __init__(self, program):
+        turtle.setup(1200,600)
         self.program = program
         self.pen = turtle.Turtle()
         self.pen.penup()
