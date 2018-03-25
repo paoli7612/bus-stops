@@ -21,4 +21,3 @@ class Logger:
         os.chdir("log/")
         file_name = time.ctime() + ".log"
         os.rename("base.log", file_name)
-        os.remove("base.log")
