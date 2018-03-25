@@ -13,8 +13,11 @@ class Program:
         self.logger = Logger("log/base.log")
         self.logger.start()
         self.window = Gui(self)
-        b = Bus("1",self)
-        b.start()
+        self.all_bus = dict()
+        for k in self.data.lines:
+            self.all_bus[k] = Bus(k,self)
+            self.all_bus[k].start()
+            self.sleep()
         raw_input("Premi INVIO per terminare il programma")
         self.running = False
         self.logger.quit()
