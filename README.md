@@ -12,3 +12,12 @@ for example:
 > tail -f log/base.log
 ```
 
+
+## info file
+Now you can see what there in archive with script "info.py"
+try with:
+
+```powershell
+> python info.py cities
+> python info.py lines Trento
+```
