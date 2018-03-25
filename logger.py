@@ -1,4 +1,6 @@
 import logging
+import time
+import os
 
 class Logger:
     def __init__(self, file_name):
@@ -13,3 +15,10 @@ class Logger:
 
     def quit(self):
         self.info("Endo program\n")
+        self.save_log()
+
+    def save_log(self):
+        os.chdir("log/")
+        file_name = time.ctime() + ".log"
+        os.rename("base.log", file_name)
+        os.remove("base.log")
