@@ -4,10 +4,12 @@ from time import sleep
 from random import randint
 from logger import Logger
 from gui.window import Gui
+from arg import Argparser
 
 class Program:
-    def __init__(self, city):
-        self.city = city
+    def __init__(self):
+        self.parser = Argparser()
+        self.city = self.parser.city
         self.data = Data(self.city)
         self.running = True
         self.logger = Logger("log/base.log")
@@ -28,7 +30,4 @@ class Program:
         return delay
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) == 1: print("Immettere il nome della citta'")
-    elif len(sys.argv) > 2: print("Immettere solo una citta")
-    else: program = Program(sys.argv[1])
+    Program()
