@@ -1,5 +1,4 @@
 import logging
-import time
 import os
 
 class Logger:
@@ -19,5 +18,15 @@ class Logger:
 
     def save_log(self):
         os.chdir("log/")
-        file_name = time.ctime() + ".log"
+        file_name = self.get_name_log()
         os.rename("base.log", file_name)
+
+    def get_name_log(self):
+        from time import localtime
+        data_struct = localtime()
+        year = data_struct.tm_year
+        month = data_struct.tm_mon
+        day = data_struct.tm_mday
+        moment = str(year) + "." + str(month) + "." + str(day)
+        file_name = moment + ".log"
+        return file_name
