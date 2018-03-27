@@ -16,6 +16,8 @@ class Bus:
             self.program.logger.info(self)
             self.next_stop = (self.next_stop + 1) % len(self.stops)
             self.program.logger.info(self.program.sleep())
+            if self.program.logger.verbose:
+                print(self)
 
 
     def start(self):

@@ -2,12 +2,13 @@ import logging
 import os
 
 class Logger:
-    def __init__(self, file_name):
+    def __init__(self, file_name,verbose=True):
         logging.basicConfig(filename=file_name,level=logging.DEBUG)
         self.info = logging.info
         self.debug = logging.debug
         self.error = logging.error
         self.critical = logging.critical
+        self.verbose = verbose
 
     def start(self):
         self.info("Start program")
