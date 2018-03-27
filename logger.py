@@ -2,7 +2,7 @@ import logging
 import os
 
 class Logger:
-    def __init__(self, file_name,verbose=True):
+    def __init__(self, file_name, verbose=True):
         logging.basicConfig(filename=file_name,level=logging.DEBUG)
         self.info = logging.info
         self.debug = logging.debug
@@ -28,6 +28,9 @@ class Logger:
         year = data_struct.tm_year
         month = data_struct.tm_mon
         day = data_struct.tm_mday
-        moment = str(year) + "." + str(month) + "." + str(day)
-        file_name = moment + ".log"
+        hour = data_struct.tm_hour
+        mins = data_struct.tm_min
+        data = str(year) + "." + str(month) + "." + str(day)
+        moment = str(hour) + "." + str(mins)
+        file_name = data + ":" + moment + ".log"
         return file_name
