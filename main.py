@@ -1,25 +1,29 @@
 from bus import Bus
-from archive import Data
-from time import sleep
-from random import randint
 from logger import Logger
 from gui.window import Gui
 from arg import Argparser
+from ram import Ram
+
+from random import randint
+from time import sleep
 
 class Program:
     def __init__(self):
         self.parser = Argparser()
-        self.city = self.parser.city
-        self.data = Data(self.city)
-        self.running = True
+        self.ram = Ram(self.parser.city)
         self.logger = Logger("log/base.log")
-        self.logger.start()
         self.window = Gui(self)
+        self.running = True
+        self.logger.start()
+        self.run()
+
+    def run(self):
         self.all_bus = dict()
         for k in self.data.lines:
             self.all_bus[k] = Bus(k,self)
             self.all_bus[k].start()
             self.sleep()
+
         raw_input("Premi INVIO per terminare il programma")
         self.running = False
         self.logger.quit()

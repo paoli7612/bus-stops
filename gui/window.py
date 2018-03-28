@@ -14,7 +14,7 @@ class Gui:
 
     def show_lines(self):
         posx = -turtle.window_width()/2
-        for id, bus_stops in self.program.data.lines.items():
+        for id, bus_stops in self.program.ram.lines.items():
             posy = 200
             self.pen.goto(posx,210)
             self.pen.write("LINEA: %s" %id)

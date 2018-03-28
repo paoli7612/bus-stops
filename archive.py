@@ -1,23 +1,38 @@
 import xml.etree.ElementTree as element_tree
 import os
 class Data:
-    def __init__(self, file_name):
-        self.all_city = os.listdir(os.getcwd()+"/data/")
-        if not file_name + ".xml" in self.all_city:
+    def __init__(self, city):
+        self.all_cities = os.listdir(os.getcwd()+"/data/")
+        self.city = city
+        if not self.city + ".xml" in self.all_cities:
             print("Citta' non presente nel archivio")
             exit(0)
 
-        self.file_name = "data/" + file_name + ".xml"
+        self.file_name = "data/" + self.city + ".xml"
 
         self.tree = element_tree.parse(self.file_name)
         self.root = self.tree.getroot()
-        self.lines = dict()
+        self.lines = self.get_lines()
+        self.stops = self.get_stops()
+
+    def get_lines(self):
+        lines = dict()
         for element_line in self.root:
             id = element_line.attrib["id"]
             bus_stops = list()
             for element_busStop in element_line:
                 bus_stops.append(element_busStop.text)
-            self.lines[id] = bus_stops
+            lines[id] = bus_stops
+        return lines
+
+    def get_stops(self):
+        stops = list()
+        for id in self.lines:
+            for stop in self.lines[id]:
+                if not stop in stops:
+                    stops.append(stop)
+        return stops
+
 
     def get_line(self, id):
         if not id in self.lines:
