@@ -8,6 +8,9 @@ from archive import Data
 from random import randint
 from time import sleep
 
+try: raw_input = input
+except: pass
+
 class Program:
     def __init__(self):
         self.parser = Argparser()
@@ -26,7 +29,7 @@ class Program:
             self.all_bus[k].start()
             self.sleep()
 
-        raw_input("Premi INVIO per terminare il programma")
+        input("Premi INVIO per terminare il programma")
         self.running = False
         self.logger.quit()
 

@@ -1,215 +1,161 @@
 INFO:root:Start program
-INFO:root:Start program
-INFO:root:Start program
 DEBUG:root:Create new bus: 1
 INFO:root:Bus 1
 Next stop: BOLGHERA "S.ANTONIO" CAP.
 
-INFO:root:0.3
+INFO:root:0.2
 INFO:root:Bus 1
 Next stop: GEROLA "OSPEDALE S.CHIARA"
 
-DEBUG:root:Create new bus: 2
-INFO:root:Bus 2
-Next stop: PIAZZALE DIVISIONI ALPINE
-
-INFO:root:0.3
-INFO:root:Bus 2
-Next stop: BRESCIA "PIEDICASTELLO"
-
-INFO:root:1.1
-DEBUG:root:Create new bus: 2a
+INFO:root:0.2
 INFO:root:Bus 1
 Next stop: PASUBIO ADAMELLO
 
-INFO:root:Bus 2a
-Next stop: PIAZZALE DIVISIONI ALPINE
-
-INFO:root:0.2
+INFO:root:0.5
 INFO:root:Bus 1
 Next stop: PIAZZA VICENZA
-
-INFO:root:1.1
-INFO:root:Bus 2
-Next stop: DOS TRENTO APULEIO
-
-INFO:root:0.6
-INFO:root:Bus 1
-Next stop: GIOVANELLI "OSP. S.CAMILLO"
 
 DEBUG:root:Create new bus: 1/
 INFO:root:Bus 1/
 Next stop: BOLGHERA "S.ANTONIO" CAP.
 
+INFO:root:0.5
+INFO:root:Bus 1
+Next stop: GIOVANELLI "OSP. S.CAMILLO"
+
+DEBUG:root:Create new bus: 2
+INFO:root:Bus 2
+Next stop: PIAZZALE DIVISIONI ALPINE
+
+INFO:root:0.8
+INFO:root:Bus 1/
+Next stop: GEROLA "OSPEDALE S.CHIARA"
+
+INFO:root:0.4
+INFO:root:Bus 2
+Next stop: BRESCIA "PIEDICASTELLO"
+
+INFO:root:0.3
+INFO:root:Bus 1/
+Next stop: PASUBIO ADAMELLO
+
+INFO:root:1.2
+INFO:root:Bus 1
+Next stop: GRAZIOLI BRIGATA ACQUI
+
+DEBUG:root:Create new bus: 2a
+INFO:root:Bus 2a
+Next stop: PIAZZALE DIVISIONI ALPINE
+
+INFO:root:0.8
+INFO:root:Bus 1/
+Next stop: PIAZZA VICENZA
+
+INFO:root:1.2
+INFO:root:Bus 2
+Next stop: DOS TRENTO APULEIO
+
+INFO:root:1.0
+INFO:root:0.4
+INFO:root:Bus 1
+Next stop: SANZIO "CASTELLO"
+
+INFO:root:Bus 2
+Next stop: DOS TRENTO MARINAIO
+
+INFO:root:0.2
+INFO:root:0.2
+INFO:root:Bus 1
+Next stop: ROMAGNOSI VANNETTI
+
+INFO:root:Bus 2
+Next stop: "PONTE S.GIORGIO"
+
 INFO:root:1.2
 INFO:root:Bus 2a
 Next stop: BRESCIA "PIEDICASTELLO"
 
 INFO:root:1.1
-INFO:root:Bus 2
-Next stop: DOS TRENTO MARINAIO
+INFO:root:Bus 1/
+Next stop: GIOVANELLI "OSP. S.CAMILLO"
 
-INFO:root:0.9
-INFO:root:Bus 1
-Next stop: GRAZIOLI BRIGATA ACQUI
-
-INFO:root:0.6
+INFO:root:0.3
 INFO:root:Bus 2a
 Next stop: DOS TRENTO APULEIO
 
-INFO:root:0.4
-INFO:root:Bus 2
-Next stop: "PONTE S.GIORGIO"
+INFO:root:0.5
+INFO:root:Bus 1
+Next stop: PIAZZA DANTE "STAZIONE FS"
+
+INFO:root:0.5
+INFO:root:Bus 1
+Next stop: S.LORENZO "FUNIVIA"
 
 INFO:root:1.1
-INFO:root:Bus 1/
-Next stop: GEROLA "OSPEDALE S.CHIARA"
-
-INFO:root:0.2
 INFO:root:Bus 2
 Next stop: F.LLI FONTANA GEN. CANTORE
 
-INFO:root:0.3
-INFO:root:Bus 2
-Next stop: SEGANTINI CENTA
-
-INFO:root:0.6
+INFO:root:0.8
 INFO:root:Bus 2a
 Next stop: DOS TRENTO MARINAIO
 
-INFO:root:0.8
+INFO:root:0.3
 INFO:root:Bus 1
-Next stop: SANZIO "CASTELLO"
+Next stop: BRESCIA "PIEDICASTELLO"
 
-INFO:root:0.7
+INFO:root:0.2
+INFO:root:Bus 2
+Next stop: SEGANTINI CENTA
+
+INFO:root:1.2
 INFO:root:Bus 1/
-Next stop: PASUBIO ADAMELLO
+Next stop: GRAZIOLI BRIGATA ACQUI
+
+INFO:root:0.2
+INFO:root:Bus 2
+Next stop: SEGANTINI DOGANA
+
+INFO:root:0.4
+INFO:root:Bus 1
+Next stop: BRESCIA DIVISIONI ALPINE
 
 INFO:root:0.6
 INFO:root:Bus 2a
 Next stop: PIAZZALE A22
 
-INFO:root:0.9
+INFO:root:0.2
+INFO:root:Bus 1
+Next stop: BRESCIA "CA DEI GAI"
+
 INFO:root:0.6
 INFO:root:Bus 2
-Next stop: SEGANTINI DOGANA
-
-INFO:root:Bus 1/
-Next stop: PIAZZA VICENZA
-
-INFO:root:0.8
-INFO:root:Bus 1
-Next stop: ROMAGNOSI VANNETTI
-
-INFO:root:0.3
-INFO:root:Bus 1
 Next stop: PIAZZA DANTE "STAZIONE FS"
 
-INFO:root:1.2
+INFO:root:0.7
+INFO:root:Bus 1/
+Next stop: SANZIO "CASTELLO"
+
+INFO:root:0.3
 INFO:root:Bus 2a
 Next stop: "PONTE S.GIORGIO"
 
-INFO:root:0.9
-INFO:root:Bus 1/
-Next stop: GIOVANELLI "OSP. S.CAMILLO"
-
-INFO:root:1.1
-INFO:root:Bus 2
-Next stop: PIAZZA DANTE "STAZIONE FS"
-
-INFO:root:0.9
+INFO:root:0.8
 INFO:root:Bus 1
-Next stop: S.LORENZO "FUNIVIA"
+Next stop: BRESCIA "VILLA SALVOTTI"
 
-INFO:root:0.4
+INFO:root:0.8
 INFO:root:Bus 2a
 Next stop: F.LLI FONTANA GEN. CANTORE
 
 INFO:root:1.0
 INFO:root:Bus 1/
-Next stop: GRAZIOLI BRIGATA ACQUI
-
-INFO:root:0.7
-INFO:root:Bus 2a
-Next stop: SEGANTINI CENTA
-
-INFO:root:0.2
-INFO:root:Bus 1/
-Next stop: SANZIO "CASTELLO"
-
-INFO:root:1.0
-INFO:root:Bus 1
-Next stop: BRESCIA "PIEDICASTELLO"
+Next stop: ROMAGNOSI VANNETTI
 
 INFO:root:1.2
 INFO:root:Bus 2
 Next stop: ROSMINI S.MARIA MAGGIORE
 
-INFO:root:0.3
-INFO:root:Bus 2a
-Next stop: SEGANTINI DOGANA
-
-INFO:root:0.4
-INFO:root:Bus 1/
-Next stop: ROMAGNOSI VANNETTI
-
-INFO:root:0.3
-INFO:root:Bus 2
-Next stop: ROSMINI "CIMITERO" / MUSE
-
-INFO:root:0.6
-INFO:root:Bus 2a
-Next stop: PIAZZA DANTE "STAZIONE FS"
-
-INFO:root:0.8
-INFO:root:Bus 1
-Next stop: BRESCIA DIVISIONI ALPINE
-
-INFO:root:0.8
-INFO:root:Bus 1/
-Next stop: PIAZZA DANTE "STAZIONE FS"
-
-INFO:root:1.1
-INFO:root:Bus 2
-Next stop: GIUSTI PASCOLI
-
-INFO:root:0.7
-INFO:root:Bus 1
-Next stop: BRESCIA "CA DEI GAI"
-
 INFO:root:0.9
-INFO:root:Bus 2a
-Next stop: ROSMINI S.MARIA MAGGIORE
-
-INFO:root:0.6
-INFO:root:Bus 1/
-Next stop: S.LORENZO "FUNIVIA"
-
-INFO:root:0.3
-INFO:root:Bus 2
-Next stop: VITTORIO VENETO "S.GIUSEPPE"
-
-INFO:root:0.3
-INFO:root:0.2
-INFO:root:Bus 1
-Next stop: BRESCIA "VILLA SALVOTTI"
-
-INFO:root:Bus 2a
-Next stop: ROSMINI "CIMITERO" / MUSE
-
-INFO:root:0.2
-INFO:root:Bus 2a
-Next stop: GIUSTI PASCOLI
-
-INFO:root:0.5
-INFO:root:Bus 1/
-Next stop: BRESCIA "PIEDICASTELLO"
-
-INFO:root:0.5
-INFO:root:Bus 2
-Next stop: VITTORIO VENETO LORENZONI
-
-INFO:root:0.5
 INFO:root:Bus 1
 Next stop: SS 45 "SCALA"
 
