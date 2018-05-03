@@ -3,6 +3,7 @@ from logger import Logger
 from gui.window import Gui
 from arg import Argparser
 from ram import Ram
+from archive import Data
 
 from random import randint
 from time import sleep
@@ -14,6 +15,7 @@ class Program:
         self.logger = Logger("log/base.log")
         self.window = Gui(self)
         self.running = True
+        self.data = Data(self.parser.city)
         self.logger.start()
         self.run()
 
