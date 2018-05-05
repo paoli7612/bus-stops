@@ -22,7 +22,6 @@ class Boss:
 
         for id, line in self.lines.items():
             bus = Bus(self, id, line)
-
         self.loop()
 
 
