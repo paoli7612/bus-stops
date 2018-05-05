@@ -1,42 +1,17 @@
-from bus import Bus
-from logger import Logger
-from gui.window import Gui
-from arg import Argparser
-from ram import Ram
-from archive import Data
+import pygame, setting, os
+from archive import get_lines
 
-from random import randint
-from time import sleep
 
-try: input = raw_input
-except: pass
-
-class Program:
+class Boss:
     def __init__(self):
-        self.parser = Argparser()
-        self.ram = Ram(self.parser.city)
-        self.logger = Logger("log/base.log")
-        self.window = Gui(self)
-        self.running = True
-        self.data = Data(self.parser.city)
-        self.logger.start()
-        self.run()
+        self.city = "Trento"
+        self.opt = setting
+        self.screen = pygame.display.set_mode(self.opt.SIZE)
+        self.dir = os.path.dirname(__file__)
+        self.path_city = os.path.join(self.dir, "data", self.city + self.opt.XML_FORMAT)
 
-    def run(self):
-        self.all_bus = dict()
-        for k in self.data.lines:
-            self.all_bus[k] = Bus(k,self)
-            self.all_bus[k].start()
-            self.sleep()
+        self.lines = get_lines(self.path_city)
 
-        input("Premi INVIO per terminare il programma")
-        self.running = False
-        self.logger.quit()
 
-    def sleep(self):
-        delay = float(randint(2,12))/10.0
-        sleep(delay)
-        return delay
 
-if __name__ == "__main__":
-    Program()
+b = Boss()
