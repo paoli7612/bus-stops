@@ -3,7 +3,7 @@ import os
 
 class Logger:
     def __init__(self, file_name, verbose=True):
-        logging.basicConfig(filename=file_name,level=logging.DEBUG)
+        logging.basicConfig(filename=file_name,level=logging.CRITICAL)
         self.info = logging.info
         self.debug = logging.debug
         self.error = logging.error

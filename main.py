@@ -8,7 +8,7 @@ from archive import Data
 from random import randint
 from time import sleep
 
-try: raw_input = input
+try: input = raw_input
 except: pass
 
 class Program:
