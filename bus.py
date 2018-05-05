@@ -8,6 +8,8 @@ class Bus(pygame.sprite.Sprite):
         self.boss = boss
         # pygame
         pygame.sprite.Sprite.__init__(self, boss.all_bus)
+        self.font_name = pygame.font.match_font("arial")
+        self.font = pygame.font.Font(self.font_name, 20)
         self.image = pygame.Surface(boss.opt.BUS_SIZE)
         self.image.fill(boss.opt.BUS_COLOR)
         self.rect = self.image.get_rect()
@@ -34,6 +36,13 @@ class Bus(pygame.sprite.Sprite):
                 self.moving = True
 
             self.rect.center = self.travel.pos
+
+    def draw(self, surface):
+        surface.blit(self.image,self.rect)
+        text_surface = self.font.render(self.id, True, (255,0,0))
+        text_rect = text_surface.get_rect()
+        text_rect.midtop = self.rect.center
+        surface.blit(text_surface, text_rect)
 
 class Travel:
     def __init__(self, start, end, speed):

@@ -8,6 +8,7 @@ class Boss:
         self.city = "Trento"
         self.opt = setting
         # pygame
+        pygame.init()
         self.screen = pygame.display.set_mode(self.opt.SIZE)
         self.clock = pygame.time.Clock()
         # path
@@ -24,11 +25,10 @@ class Boss:
             bus = Bus(self, id, line)
         self.loop()
 
-
     def loop(self):
         self.running = True
         while self.running:
-            self.clock.tick(50)
+            self.clock.tick(120)
             # event
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -37,7 +37,8 @@ class Boss:
             self.all_bus.update()
             # draw
             self.screen.blit(self.map.screen,(0,0))
-            self.all_bus.draw(self.screen)
+            for bus in self.all_bus:
+                bus.draw(self.screen)
             pygame.display.flip()
 
 

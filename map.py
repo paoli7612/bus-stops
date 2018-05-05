@@ -18,8 +18,8 @@ class Map:
         used = list()
         for id, line in self.boss.lines.items():
             for stop_name in line:
-                x = randint(0, self.boss.opt.WIDTH)
-                y = randint(0, self.boss.opt.HEIGHT)
+                x = randint(50, self.boss.opt.WIDTH-50)
+                y = randint(50, self.boss.opt.HEIGHT-50)
                 if not stop_name in used:
                     self.point_dict[stop_name] = (x,y)
                     used.append(stop_name)
