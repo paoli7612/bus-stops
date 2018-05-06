@@ -134,4 +134,55 @@
     <fermata>BRESCIA "PIEDICASTELLO"</fermata>
     <fermata>PIAZZALE DIVISIONI ALPINE</fermata>
   </linea>
+  <linea id="3">
+    <fermata>CORTESANO</fermata>
+    <fermata>VIGO MEANO ALLE GORGHE"</fermata>
+    <fermata>VIGO MEANO PIAZZA STEINER</fermata>
+    <fermata>VIGO MEANO DON PERUGINI</fermata>
+    <fermata>VIGO MEANO RIO PAPA</fermata>
+    <fermata>GAZZADINA AL MOLAR</fermata>
+    <fermata>GAZZADINA AL PONTAT</fermata>
+    <fermata>GAZZADINA STRADA VECCHIA</fermata>
+    // <fermata>GAZZADINA LE CASE NOVE</fermata>
+    <fermata>SP 76 "MAREGIOLI"</fermata>
+    <fermata>MEANO "CAMPO SPORTIVO"</fermata>
+    //<fermata>MEANO "CAMPO CIVICO"</fermata>
+    <fermata>SP 76 BIVIO S.LAZZARO</fermata>
+    <fermata>MEANO "CIMITERO"</fermata>
+    <fermata>MEANO PORTONI</fermata>
+    <fermata>MEANO BIVIO S.LAZZARO</fermata>
+    <fermata>SP 76 DOS DI LAMAR</fermata>
+    <fermata>SP 76 "VIA ROSSA"</fermata>
+    <fermata>SP 76 CARPENEDI</fermata>
+    <fermata>GARDOLO S.ANNA CARPENEDI</fermata>
+    <fermata>GARDOLO S.ANNA</fermata>
+    <fermata>GARDOLO PIAZZA</fermata>
+    <fermata>GARDOLO P.LE NEUFAHRN NORD</fermata>
+    <fermata>GARDOLO SVINCOLO SS 12</fermata>
+    <fermata>SS 12 "PALUDI"</fermata>
+    <fermata>SS 12 CANOVA</fermata>
+    <fermata>BRENNERO "BREN CENTER"</fermata>
+    <fermata>BRENNERO "MAGNETE"</fermata>
+    <fermata>BRENNERO MARCONI</fermata>
+    <fermata>BRENNERO "EX SCALO FILZI"</fermata>
+    <fermata>SEGANTINI CENTA</fermata>
+    <fermata>SEGANTINI DOGANA</fermata>
+    <fermata>PIAZZA DANTE "STAZIONE FS"</fermata>
+    <fermata>ROSMINI S.MARIA MAGGIORE</fermata>
+    <fermata>TRAVAI AL NUOTO / MUSE</fermata>
+    <fermata>TRAVAI PIAZZA FIERA</fermata>
+    <fermata>3 NOV "CENTRO S.CHIARA"</fermata>
+    <fermata>3 NOV "PONTE CAVALLEGGERI"</fermata>
+    <fermata>VERONA FOGAZZARO</fermata>
+    <fermata>VERONA EINAUDI</fermata>
+    <fermata>VERONA "S.BARTOLOMEO"</fermata>
+    <fermata>VERONA "QUESTURA"</fermata>
+    <fermata>VERONA "BIG CENTER"</fermata>
+    <fermata>VERONA "PALAZZO STELLA"</fermata>
+    <fermata>MENGUZZATO "CENTRO CIVICO"</fermata>
+    <fermata>MENGUZZATO AL CASTELLER</fermata>
+    <fermata>CONCI FERROVIA</fermata>
+    <fermata>CONCI DE RICCABONA</fermata>
+    <fermata>CONCI "VILLAZZANO 3"</fermata>
+  </linea>
 </linee>

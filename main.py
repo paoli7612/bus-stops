@@ -1,4 +1,6 @@
 import pygame, setting, os
+from threading import Thread
+from time import sleep
 from archive import get_lines
 from bus import Bus
 from map import Map
@@ -21,9 +23,16 @@ class Boss:
         self.map = Map(self)
         self.all_bus = pygame.sprite.Group()
 
+        self.th_loop = Thread(target=self.loop)
+        self.th_station = Thread(target=self.station)
+        self.th_station.start()
+        sleep(1)
+        self.th_loop.start()
+
+    def station(self):
         for id, line in self.lines.items():
             bus = Bus(self, id, line)
-        self.loop()
+            sleep(0.8)
 
     def loop(self):
         self.running = True

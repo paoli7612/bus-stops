@@ -23,6 +23,8 @@ class Bus(pygame.sprite.Sprite):
 
     def update(self):
         now = pygame.time.get_ticks()
+        try: print(self.last_update)
+        except: return
         if now - self.last_update > 10:
             self.last_update = now
             print(self.moving)
