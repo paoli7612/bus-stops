@@ -41,7 +41,7 @@ class Bus(pygame.sprite.Sprite):
 
     def draw(self, surface):
         surface.blit(self.image,self.rect)
-        text_surface = self.font.render(self.id, True, (255,0,0))
+        text_surface = self.font.render(self.id, True, (0,0,255))
         text_rect = text_surface.get_rect()
         text_rect.midtop = self.rect.center
         surface.blit(text_surface, text_rect)
