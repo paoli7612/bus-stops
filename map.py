@@ -1,30 +1,40 @@
-# map.py
-
-import pygame
 from random import randint
+from copy import copy
+
+from window import Window
 
 class Map:
-    def __init__(self, boss):
-        self.boss = boss
-        self.screen = pygame.Surface(boss.opt.SIZE)
-        self.screen.fill(boss.opt.BGCOLOR)
-        self.reset_points_dict()
-        self.reset_screen()
+    def __init__(self, table):
+        self.table = table
+        self.window = Window(table.stop_list)
+        self.lines = list()
 
-    def __getitem__(self, key): return self.point_dict[key]
+    def del_line(self, id):
+        self.window.set_screen()
+        for p,(line,c) in enumerate(self.lines):
+            if line.id == id:
+                del self.lines[p]
+        for line,c in self.lines:
+            self.draw_line(line,c)
+        self.window.legend.del_line(id)
 
-    def reset_points_dict(self):
-        self.point_dict = dict()
-        used = list()
-        for id, line in self.boss.lines.items():
-            for stop_name in line:
-                x = randint(50, self.boss.opt.WIDTH-50)
-                y = randint(50, self.boss.opt.HEIGHT-50)
-                if not stop_name in used:
-                    self.point_dict[stop_name] = (x,y)
-                    used.append(stop_name)
-        del used
+    def draw_line(self, line, c):
+        l = len(line)
+        for p in range(l):
+            p1 = line[p].pos
+            p2 = line[(p+1)%l].pos
+            self.window.draw_line(p1,p2,c)
 
-    def reset_screen(self):
-        for stop, pos in self.point_dict.items():
-            pygame.draw.circle(self.screen, self.boss.opt.STOP_COLOR,pos, self.boss.opt.STOP_RADIUS,0)
+    def show_line(self, id):
+        line = self.table[id]
+        c = self.random_color()
+        self.lines.append((copy(line),c))
+        self.draw_line(line,c)
+        self.window.legend.add_line(id,c)
+
+
+    def random_color(self):
+        r = randint(50,250)
+        g = randint(50,250)
+        b = randint(50,250)
+        return (r,g,b)
