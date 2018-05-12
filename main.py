@@ -30,25 +30,28 @@ class Boss:
         self.th_loop.start()
 
     def station(self):
-        for id, line in self.lines.items():
-            bus = Bus(self, id, line)
-            sleep(0.8)
+        for i in range(60):
+            for id, line in self.lines.items():
+                bus = Bus(self, id, line)
+                sleep(0.8)
 
     def loop(self):
         self.running = True
         while self.running:
-            self.clock.tick(120)
-            # event
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    self.running = False
-            # update
-            self.all_bus.update()
-            # draw
-            self.screen.blit(self.map.screen,(0,0))
-            for bus in self.all_bus:
-                bus.draw(self.screen)
-            pygame.display.flip()
+            try:
+                self.clock.tick(120)
+                # event
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        self.running = False
+                # update
+                self.all_bus.update()
+                # draw
+                self.screen.blit(self.map.screen,(0,0))
+                for bus in self.all_bus:
+                    bus.draw(self.screen)
+                pygame.display.flip()
+            except: pass
 
 
 b = Boss()

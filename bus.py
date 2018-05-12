@@ -25,7 +25,7 @@ class Bus(pygame.sprite.Sprite):
         now = pygame.time.get_ticks()
         try: print(self.last_update)
         except: return
-        if now - self.last_update > 10:
+        if now - self.last_update > 20:
             self.last_update = now
             print(self.moving)
             if self.moving:
@@ -34,7 +34,11 @@ class Bus(pygame.sprite.Sprite):
                 current_stop = self.boss.map[self.line[self.current_stop]]
                 self.current_stop = (self.current_stop + 1) % len(self.line)
                 next_stop = self.boss.map[self.line[self.current_stop]]
-                self.travel = Travel(current_stop, next_stop, 1)
+                self.travel = Travel(current_stop, next_stop, 5)
+                screen = self.boss.map.screen
+                func = pygame.draw.line
+                func(screen, (200,100,50), current_stop, next_stop)
+                
                 self.moving = True
 
             self.rect.center = self.travel.pos
@@ -65,6 +69,10 @@ class Travel:
 
         self.pos = (self.sx, self.sy)
 
+        if abs(self.sx-self.ex) <= self.speed:
+            self.sx = self.ex
+        if abs(self.sy-self.ey) <= self.speed:
+            self.sy = self.ey
         if self.sx == self.ex and self.sy == self.ey:
             return False
         else: return True
