@@ -183,4 +183,89 @@
     <fermata>CONCI DE RICCABONA</fermata>
     <fermata>CONCI "VILLAZZANO 3"</fermata>
   </linea>
+  <linea id="4">
+    <fermata>GARDOLO P.LE NEUFAHRN NORD</fermata>
+    <fermata>GARDOLO SOPRASASSO</fermata>
+    <fermata>GARDOLO "STAZIONE FTM"</fermata>
+    <fermata>M. ROSSI "STELLA D.MATTINO"</fermata>
+    <fermata>RONCAFORT NORD</fermata>
+    <fermata>RONCAFORT</fermata>
+    <fermata>RONCAFORT CAPRONI</fermata>
+    <fermata>RONCAFORT BETTINE</fermata>
+    <fermata>CANEPPELE GOIO</fermata>
+    <fermata>MACCANI COMMERCIO</fermata>
+    <fermata>MACCANI "POLIZIA LOCALE"</fermata>
+    <fermata>MACCANI "EX SLOI"</fermata>
+    <fermata>MACCANI CAMPOTRENTINO</fermata>
+    <fermata>MACCANI "ROTATORIA"</fermata>
+    <fermata>MACCANI ABONDI</fermata>
+    <fermata>OBERZINER ALPINI</fermata>
+    <fermata>F.LLI FONTANA GEN. CANTORE</fermata>
+    <fermata>SEGANTINI CENTA</fermata>
+    <fermata>SEGANTINI DOGANA</fermata>
+    <fermata>PIAZZA DANTE "STAZIONE FS"</fermata>
+    <fermata>ROSMINI S.MARIA MAGGIORE</fermata>
+    <fermata>ROSMINI "CIMITERO" / MUSE</fermata>
+    <fermata>GIUSTI PASCOLI</fermata>
+    <fermata>S.PIO X LARGO PRATI</fermata>
+    <fermata>S.PIO X BENEVOLI</fermata>
+    <fermata>DEGASPERI ANNA FRANK</fermata>
+    <fermata>DEGASPERI LA CLARINA</fermata>
+    <fermata>DEGASPERI "BIG CENTER"</fermata>
+    <fermata>DEGASPERI PALAZZO STELLA</fermata>
+    <fermata>MENGUZZATO "CENTRO CIVICO"</fermata>
+    <fermata>MENGUZZATO AL CASTELLER</fermata>
+    <fermata>BETTINI "NIDO MAD. BIANCA"</fermata>
+    <fermata>BETTINI "MADONNA BIANCA"</fermata>
+    <fermata>CONCI FERROVIA</fermata>
+    <fermata>CONCI DE RICCABONA</fermata>
+  </linea>
+  <linea id="4/">
+    <fermata>GARDOLO P.LE NEUFAHRN NORD</fermata>
+    <fermata>GARDOLO SOPRASASSO</fermata>
+    <fermata>GARDOLO "STAZIONE FTM"</fermata>
+    <fermata>M. ROSSI "STELLA D.MATTINO"</fermata>
+    <fermata>RONCAFORT NORD</fermata>
+    <fermata>RONCAFORT</fermata>
+    <fermata>RONCAFORT CAPRONI</fermata>
+    <fermata>RONCAFORT BETTINE</fermata>
+    <fermata>CANEPPELE GOIO</fermata>
+    <fermata>MACCANI COMMERCIO</fermata>
+    <fermata>MACCANI "POLIZIA LOCALE"</fermata>
+    <fermata>MACCANI "EX SLOI"</fermata>
+    <fermata>MACCANI CAMPOTRENTINO</fermata>
+    <fermata>MACCANI "ROTATORIA"</fermata>
+    <fermata>MACCANI ABONDI</fermata>
+    <fermata>OBERZINER ALPINI</fermata>
+    <fermata>F.LLI FONTANA GEN. CANTORE</fermata>
+    <fermata>SEGANTINI CENTA</fermata>
+    <fermata>SEGANTINI DOGANA</fermata>
+    <fermata>PIAZZA DANTE "STAZIONE FS"</fermata>
+    <fermata>ROSMINI S.MARIA MAGGIORE</fermata>
+    <fermata>ROSMINI "CIMITERO" / MUSE</fermata>
+    <fermata>GIUSTI PASCOLI</fermata>
+    <fermata>S.PIO X LARGO PRATI</fermata>
+    <fermata>S.PIO X BENEVOLI</fermata>
+    <fermata>DEGASPERI ANNA FRANK</fermata>
+    <fermata>DEGASPERI LA CLARINA</fermata>
+    <fermata>DEGASPERI "BIG CENTER"</fermata>
+    <fermata>DEGASPERI PALAZZO STELLA</fermata>
+    <fermata>MENGUZZATO "CENTRO CIVICO"</fermata>
+    <fermata>MENGUZZATO AL CASTELLER</fermata>
+    <fermata>BETTINI "NIDO MAD. BIANCA"</fermata>
+    <fermata>BETTINI "MADONNA BIANCA"</fermata>
+    <fermata>CONCI FERROVIA</fermata>
+    <fermata>CONCI DE RICCABONA</fermata>
+    <fermata>VILLAZZANO "VILLA TAMBOSI"</fermata>
+    <fermata>VILLAZZANO "VILLA DE MERSI"</fermata>
+    <fermata>VILLAZZANO "CHIESA"</fermata>
+    <fermata>VILLAZZANO VALNIGRA</fermata>
+    <fermata>GABBIOLO "CAMPO SPORTIVO"</fermata>
+    <fermata>POVO SALE</fermata>
+    <fermata>POVO "CENTRO CIVICO"</fermata>
+    <fermata>POVO PIAZZA MANCI</fermata>
+    <fermata>POVO S.AGATA</fermata>
+    <fermata>POVO "POLO SOCIALE" CAP.</fermata>
+
+  </linea>
 </linee>
