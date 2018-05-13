@@ -9,8 +9,11 @@ class Simulation:
     def __init__(self):
         self.table = get_table("Trento")
         self.map = Map(self.table)
-        self.new_bus("1")
+        self.new_bus("4")
         self.show_line("1")
+        self.show_line("1/")
+        self.show_line("4")
+        self.show_line("4/")
         self.map.window.loop()
 
     def new_bus(self, id):
