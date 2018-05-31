@@ -1,6 +1,4 @@
 from copy import copy
-from travel import Travel
-
 
 class Bus:
     def __init__(self, id, line):

@@ -1,0 +1,31 @@
+<linee>
+  <linea id="Caldonazzzo-Trento">
+    <fermata>BORGO VALSUGANA</fermata>
+    <fermata>RONCEGNO TERME</fermata>
+    <fermata>MARTER</fermata>
+    <fermata>NOVALEDO</fermata>
+    <fermata>CAMPIELLO</fermata>
+    <fermata>LEVICO TERME</fermata>
+    <fermata>CALDONAZZO</fermata>
+    <fermata>CALCERANICA</fermata>
+    <fermata>SAN CRISTOFORO</fermata>
+    <fermata>PERGINE</fermata>
+    <fermata>TRENTO</fermata>
+  </linea>
+  <linea id="Caldonazzo-Levico">
+    <fermata>TRENTO</fermata>
+    <fermata>PERGINE</fermata>
+    <fermata>SAN CRISTOFORO</fermata>
+    <fermata>CALCERANICA</fermata>
+    <fermata>CALDONAZZO</fermata>
+    <fermata>LEVICO TERME</fermata>
+  </line>
+  <linea id="Pergine-Trento">
+    <fermata>BORGO VALSUGANA</fermata>
+    <fermata>MARTER</fermata>
+    <fermata>NOVALEDO</fermata>
+    <fermata>CAMPIELLO</fermata>
+    <fermata>LEVICO TERME</fermata>
+    <fermata>PERGINE VALSUGANA</fermata>
+  </line>
+</linee>
