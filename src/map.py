@@ -34,7 +34,7 @@ class Map:
 
 
     def random_color(self):
-        r = randint(50,250)
-        g = randint(50,250)
-        b = randint(50,250)
+        r = randint(0,250)
+        g = randint(0,250)
+        b = randint(0,250)
         return (r,g,b)
